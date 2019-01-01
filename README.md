@@ -1,3 +1,0 @@
-# MyQuiz
-
-Andoid quiz app
