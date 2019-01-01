@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "186286645861",
+    "firebase_url": "https://quiz-28b36.firebaseio.com",
+    "project_id": "quiz-28b36",
+    "storage_bucket": "quiz-28b36.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186286645861:android:054d9d761722cc17",
+        "android_client_info": {
+          "package_name": "com.projectunimore.root.myquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "186286645861-d9utunpn309qc2hd464ujq7i1ncimuv4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR9R2B0F7VQjZ3sDSH6wvZsiI6iIA6Hz8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
