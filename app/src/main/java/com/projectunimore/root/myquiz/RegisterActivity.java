@@ -82,11 +82,13 @@ public class RegisterActivity extends AppCompatActivity {
 
 
         // Reset errors displayed in the form.
+        mUsernameView.setError(null);
         mEmailView.setError(null);
         mPasswordView.setError(null);
         mConfirmPasswordView.setError(null);
 
         // Store values at the time of the login attempt.
+        String username = mUsernameView.getText().toString();
         String email = mEmailView.getText().toString();
         String password = mPasswordView.getText().toString();
         String confirmpassword = mConfirmPasswordView.getText().toString();
@@ -100,10 +102,11 @@ public class RegisterActivity extends AppCompatActivity {
             focusView = mPasswordView;
             cancel = true;
         }
-        // check when no password and confirm password is tiped
+
+        // check when no password and confirm password entred
         if (TextUtils.isEmpty(confirmpassword) && TextUtils.isEmpty(password)) {
-            mPasswordView.setError(getString(R.string.invalid_password));
-            mConfirmPasswordView.setError(getString(R.string.invalid_password));
+            mPasswordView.setError(getString(R.string.error_field_required));
+            mConfirmPasswordView.setError(getString(R.string.error_field_required));
             focusView = mPasswordView;
             cancel = true;
         }
@@ -119,6 +122,14 @@ public class RegisterActivity extends AppCompatActivity {
             cancel = true;
         }
 
+        // check username length
+        if(TextUtils.isEmpty(username)){
+            mUsernameView.setError(getString(R.string.error_field_required));
+            focusView = mUsernameView;
+            cancel = true;
+        }
+
+
         if (cancel) {
             // There was an error; don't attempt login and focus the first
             // form field with an error.
@@ -129,6 +140,12 @@ public class RegisterActivity extends AppCompatActivity {
             createFirebaseUser();
 
         }
+    }
+
+    public boolean isUsernameValid(String username)
+    {
+
+        return username.length() > 0;
     }
 
     public boolean isEmailValid(String email)
