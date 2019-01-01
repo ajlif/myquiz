@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -13,9 +14,9 @@
     tools:context=".MainActivity">
 
     <EditText
+        android:id="@+id/login_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/login_email"
         android:hint="@string/prompt_email"
         android:imeOptions="actionNext"
         android:textColor="@color/white"
@@ -25,6 +26,7 @@
         android:textIsSelectable="false"
         android:ems="10"
         android:gravity="center"/>
+
     <EditText
         android:id="@+id/login_password"
         android:textColor="@color/white"
@@ -33,9 +35,13 @@
         android:layout_height="wrap_content"
         android:hint="@string/prompt_password"
         android:imeOptions="actionUnspecified"
+        android:imeActionId="@+id/login"
+        android:imeActionLabel="@string/action_sign_in_short"
         android:inputType="textPassword"
         android:maxLines="1"
-        android:gravity="center"/>
+        android:gravity="center"
+        tools:ignore="InvalidImeActionId" />
+
     <Button
         android:id="@+id/login_sign_in_button"
         style="?android:textAppearanceMedium"
@@ -48,6 +54,7 @@
         android:textStyle="bold"
         android:enabled="true"
         android:onClick="signInExistingUser"/>
+
     <Button
         android:id="@+id/login_register_button"
         style="?android:textAppearanceMedium"
@@ -59,4 +66,5 @@
         android:text="@string/action_register"
         android:textStyle="bold"
         android:onClick="registerNewUser"/>
+
 </LinearLayout>

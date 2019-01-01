@@ -180,7 +180,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                         if(!task.isSuccessful()){
                             Log.d("MyQuiz", "user creation failed");
-                            showErrorDialog("Registration attempt failed");
+                            showErrorDialog(task.getException().getMessage());
                         } else {
                             saveDisplayName();
                             Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
