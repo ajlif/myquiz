@@ -17,4 +17,26 @@
         completions."
     </string>
     <string name="invalid_password">here</string>
+    <string name="img_history">history</string>
+
+    <string name="true_button">True</string>
+    <string name="false_button">False</string>
+    <string name="initial_score">Score</string>
+
+    <string name="incorrect_toast">Wrong!</string>
+    <string name="correct_toast">You got it!</string>
+
+    <string name="question_1">Valentine\'s day is banned in Saudi Arabia.1</string>
+    <string name="question_2">Valentine\'s day is banned in Saudi Arabia.2</string>
+    <string name="question_3">Valentine\'s day is banned in Saudi Arabia.3</string>
+    <string name="question_4">Valentine\'s day is banned in Saudi Arabia.4</string>
+    <string name="question_5">Valentine\'s day is banned in Saudi Arabia.5</string>
+    <string name="question_6">Valentine\'s day is banned in Saudi Arabia.6</string>
+    <string name="question_7">Valentine\'s day is banned in Saudi Arabia.7</string>
+    <string name="question_8">Valentine\'s day is banned in Saudi Arabia.8</string>
+    <string name="question_9">Valentine\'s day is banned in Saudi Arabia.9</string>
+    <string name="question_10">Valentine\'s day is banned in Saudi Arabia.10</string>
+    <string name="question_11">Valentine\'s day is banned in Saudi Arabia.11</string>
+    <string name="question_12">Valentine\'s day is banned in Saudi Arabia.12</string>
+    <string name="question_13">Valentine\'s day is banned in Saudi Arabia.13</string>
 </resources>

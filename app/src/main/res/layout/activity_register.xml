@@ -12,6 +12,12 @@
     android:gravity="center"
     tools:context=".RegisterActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home"
+        android:layout_marginTop="0dp"/>
 
     <EditText
         android:id="@+id/register_name"

@@ -31,7 +31,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class RegisterActivity extends AppCompatActivity {
 
     // Constants for shared preference
-    static final String CHAT_PREFS = "ChatPrefs";
+    static final String QUIZ_PREFS = "QuizPrefs";
     static final String DISPLAY_NAME_KEY = "username";
 
     // UI references
@@ -194,15 +194,15 @@ public class RegisterActivity extends AppCompatActivity {
 
 
 
-    // TODO: Save the display name to Shared Preferences
+    // Save the display name to Shared Preferences
     private void saveDisplayName() {
         String displayName = mUsernameView.getText().toString();
-        SharedPreferences prefs = getSharedPreferences(CHAT_PREFS, 0);
+        SharedPreferences prefs = getSharedPreferences(QUIZ_PREFS, 0);
         prefs.edit().putString(DISPLAY_NAME_KEY, displayName).apply();
     }
 
 
-    // TODO: Create an alert dialog to show in case registration failed
+    // Create an alert dialog to show in case registration failed
     private void showErrorDialog(String message){
 
         new AlertDialog.Builder(this)

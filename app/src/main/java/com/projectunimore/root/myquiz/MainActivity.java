@@ -1,5 +1,6 @@
 package com.projectunimore.root.myquiz;
 
+import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -17,7 +18,6 @@ import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
@@ -57,17 +57,20 @@ public class MainActivity extends AppCompatActivity {
             focusView = mPasswordView;
             focusView.requestFocus();
         }
-
+        /*
         mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                 if (actionId == R.id.login || actionId == EditorInfo.IME_NULL) {
                     attemptLogin();
+                    Log.d("MyQuiz", "true");
                     return true;
+
                 }
+                Log.d("MyQuiz", "false");
                 return false;
             }
-        });
+        }); */
 
         // TODO: Grab an instance of FirebaseAuth
         mAuth = FirebaseAuth.getInstance();
@@ -83,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
         //Toast.makeText(this, "SignIN", Toast.LENGTH_SHORT).show();
 
         // TODO: Call attemptLogin() here
+        Log.d("MyQuiz", "signInExistingUser");
         attemptLogin();
 
     }
